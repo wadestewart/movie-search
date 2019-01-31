@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>I &hearts; Movies</title>
+     <!-- Linking CSS document -->
+     <link rel="stylesheet" href="style.css">
+</head>
+<body class="container">
+    <!-- Header bar with name of App  -->
+    <header>
+        <ul>
+            <li>
+                <li>Wade's IMDB</li>
+            </li>
+        </ul>
+    </header>
+
+    <!-- Form for user movie search -->
+    <div class="container-body">
+
+        <div class="aside">
+            <!-- This button will display the saved favorites -->
+            <button type="button" id="favorites-button">Favorites</button>
+        </div>
+    
+        <div class="nav">
+            <form>
+                <input id="user_input" type="text" placeholder="What Movie Are You Searching For?">
+                <button type="button" id="submit" onclick="getMovieData()">Submit</button>
+            </form>
+        </div>
+
+        <main class="content">    
+            <!-- This div will display the user's favorite movies list -->
+            <div id="favorite-list"></div>
+
+            <!-- This div will display the user's movie search results -->
+            <div id="movies"></div>
+        </main>
+        
+        <footer>
+
+        </footer>
+
+    </div>
+    
+    <!-- Linking Js document -->
+    <script src="script.js"></script>
+
+</body>
+</html>
